@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/configuración"
+        android:title="Busqueda"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_busqueda"
+        android:orderInCategory="100"></item>
+    <item
+        android:id="@+id/lector"
+        app:showAsAction="never"
+        android:title="Iniciar lector Qr"
+        android:orderInCategory="100"></item>
+    <item
+        android:id="@+id/mapas"
+        app:showAsAction="never"
+        android:title="Mapas"
+        android:orderInCategory="100">
+        <menu>
+            <item
+                android:id="@+id/enviaemail"
+                android:title="enviar correo"
+                android:orderInCategory="12">
+            </item>
+
+            <item
+                android:orderInCategory="11"
+                android:id="@+id/email_unsegure"
+                android:title="enviar correo no seguro">
+            </item>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/Reconocimiento"
+        android:title="Reconocimiento de voz">
+
+    </item>
+
+</menu>
+

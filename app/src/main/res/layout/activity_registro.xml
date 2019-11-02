@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FF0000"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".RegistroActivity">
+
+    <ImageView
+        android:id="@+id/loginActivityImg"
+        android:src="@drawable/logobooking"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginActivityImg"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:text="Formulario de Registro"
+        android:textColor="@color/primary_text"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="402dp"
+        android:layout_above="@id/txtlogin"
+        android:layout_below="@id/registro"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/icons"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:hint="Identificacion"
+            android:inputType="text|number"
+            android:textColor="@color/primary_light"
+            android:textColorHint="@color/primary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/primary_dark"></View>
+
+        <EditText
+            android:id="@+id/contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/icons"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/primary"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/primary_light"
+            android:textColorHint="@color/primary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"></View>
+
+        <Button
+            android:id="@+id/btnenviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="registro"
+            android:background="@drawable/gradient"
+            android:text="login"
+            android:textAllCaps="false"
+            android:textColor="@color/icons" />
+
+        <Button
+            android:id="@+id/btnregistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_secundary"
+            android:onClick="confirmar"
+            android:text="Enviar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Olvido su contraseña?"
+        android:id="@+id/txtlogin"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/ColorAccentDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</RelativeLayout>

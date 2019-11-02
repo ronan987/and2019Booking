@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MaterialDesign</string>
+    <string name="lector">Lector QR</string>
+
+    <string-array name="items">
+        <item>Opcion1</item>
+        <item>Opcion2</item>
+        <item>Opcion3</item>
+        <item>Opcion4</item>
+        <item>Opcion5</item>
+        <item>Opcion6</item>
+        <item>Opcion7</item>
+        <item>Opcion8</item>
+
+    </string-array>
+
+
+    <string-array name="Icons">
+        <item>@drawable/ic_alert</item>
+        <item>@drawable/ic_identity</item>
+        <item>@drawable/ic_alert</item>
+        <item>@drawable/ic_alert</item>
+        <item>@drawable/ic_alert</item>
+        <item>@drawable/ic_alert</item>
+        <item>@drawable/ic_alert</item>
+        <item>@drawable/ic_alert</item>
+    </string-array>
+
+    <string name="abrir">Iniciar Navegacion</string>
+    <string name="cerrar">Cerrar Navegacion</string>
+
+    <string name="action_settings">Configuracion</string>
+    <string name="objTTS_sin_motor">El disositivo no cuenta con la capacidad de sintesis de texto</string>
+    <string name="title_activity_tipo_lugar">TipoLugarActivity</string>
+</resources>
